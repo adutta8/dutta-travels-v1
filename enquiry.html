@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry &amp; Booking | Dutta Travels</title>
+<meta name="description" content="Send a bus rental enquiry to Dutta Travels — tell us your route, travel dates and passenger count for a custom quote.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a href="index.html" class="brand">
+      🚌 Dutta Travels
+      <span class="brand-sub">Habra, West Bengal</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About &amp; Bus</a>
+      <a href="routes.html">Routes</a>
+      <a href="availability.html">Availability</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html" class="nav-cta active">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Enquiry &amp; Booking</h1>
+    <p>Tell us about your trip and we'll get back to you with a custom quote.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="split">
+      <div class="form-card">
+        <span class="badge-quote">No fixed price list — every quote is customised to your trip</span>
+        <div class="form-success">Thanks! Your enquiry has been sent. We'll get back to you shortly — for a faster response, you can also message us on WhatsApp.</div>
+        <form data-formspree>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="pickup">Pickup City *</label>
+              <input type="text" id="pickup" name="pickup_city" placeholder="e.g. Habra / Kolkata" required>
+            </div>
+            <div class="form-row">
+              <label for="destination">Destination / Route *</label>
+              <input type="text" id="destination" name="destination" placeholder="e.g. Darjeeling, North Bengal" required>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="start-date">Travel Start Date *</label>
+              <input type="date" id="start-date" name="travel_start_date" required>
+            </div>
+            <div class="form-row">
+              <label for="end-date">Travel End Date *</label>
+              <input type="date" id="end-date" name="travel_end_date" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="passengers">Number of Passengers *</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="55" placeholder="Up to 55" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Additional Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any special requirements, exact pickup point, occasion, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
+          <p class="form-note text-center mt-lg">Prefer chatting directly? Use the WhatsApp button below instead.</p>
+        </form>
+      </div>
+
+      <div class="side-card">
+        <h3>Prefer WhatsApp or a Call?</h3>
+        <p style="color:var(--color-text-muted); font-size:0.92rem;">Many customers find it quicker to just message us directly.</p>
+        <a href="#" data-whatsapp data-whatsapp-message="Hi Dutta Travels, I'd like to enquire about bus rental. My route: ____, dates: ____, passengers: ____." class="btn btn-whatsapp btn-block mt-lg">💬 Enquire on WhatsApp</a>
+        <a href="tel:" data-phone-tel class="btn btn-outline btn-block mt-lg" style="border-color: var(--color-border); color: var(--color-primary);">📞 Call <span data-phone-display></span></a>
+
+        <h3 class="mt-lg">Before You Enquire</h3>
+        <div class="contact-line">
+          <span>✓</span>
+          <span>Check the <a href="availability.html">availability calendar</a> for an indicative view of open dates.</span>
+        </div>
+        <div class="contact-line">
+          <span>✓</span>
+          <span>Since we run one 55-seat bus, dates are confirmed on a first-come basis.</span>
+        </div>
+        <div class="contact-line">
+          <span>✓</span>
+          <span>Pricing is quoted per trip — no fixed rate card — so tell us as much detail as you can for an accurate quote.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Dutta Travels</h4>
+        <p style="color:#cfd9e4; font-size:0.9rem;">55-seater non-AC bus rental based in Habra, West Bengal — serving all of India, with North India route expertise.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="about.html">About &amp; Bus</a>
+        <a href="routes.html">Routes</a>
+        <a href="availability.html">Availability</a>
+        <a href="enquiry.html">Get a Quote</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:" data-phone-tel><span data-phone-display></span></a>
+        <a href="mailto:" data-email-link><span data-email-display></span></a>
+        <a href="contact.html">Habra, West Bengal</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Dutta Travels. All rights reserved.</div>
+  </div>
+</footer>
+
+<a href="#" class="whatsapp-float" data-whatsapp data-whatsapp-message="Hi Dutta Travels, I'd like to enquire about bus rental." aria-label="Chat on WhatsApp">💬</a>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Availability | Dutta Travels</title>
+<meta name="description" content="Check indicative availability of the Dutta Travels bus before sending an enquiry. Live calendar updated by the owner via Google Sheets.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a href="index.html" class="brand">
+      🚌 Dutta Travels
+      <span class="brand-sub">Habra, West Bengal</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About &amp; Bus</a>
+      <a href="routes.html">Routes</a>
+      <a href="availability.html" class="active">Availability</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html" class="nav-cta">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Check Availability</h1>
+    <p>Since we operate a single bus, dates below marked "Booked" are already taken.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container" id="availability-app">
+    <div id="availability-status" class="availability-status" style="display:none;"></div>
+    <div id="availability-calendar"></div>
+    <div class="legend">
+      <span><span class="swatch open"></span> Open — likely available</span>
+      <span><span class="swatch booked"></span> Booked — already reserved</span>
+    </div>
+    <p class="form-note mt-lg">This calendar is indicative only. Please confirm your exact dates with us directly before finalising travel plans, especially for peak season and long-distance North India trips.</p>
+    <div class="hero-actions">
+      <a href="enquiry.html" class="btn btn-primary">Enquire About These Dates</a>
+      <a href="#" data-whatsapp data-whatsapp-message="Hi Dutta Travels, I checked the availability calendar and would like to ask about specific dates." class="btn btn-whatsapp">💬 Confirm on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Dutta Travels</h4>
+        <p style="color:#cfd9e4; font-size:0.9rem;">55-seater non-AC bus rental based in Habra, West Bengal — serving all of India, with North India route expertise.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="about.html">About &amp; Bus</a>
+        <a href="routes.html">Routes</a>
+        <a href="availability.html">Availability</a>
+        <a href="enquiry.html">Get a Quote</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:" data-phone-tel><span data-phone-display></span></a>
+        <a href="mailto:" data-email-link><span data-email-display></span></a>
+        <a href="contact.html">Habra, West Bengal</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Dutta Travels. All rights reserved.</div>
+  </div>
+</footer>
+
+<a href="#" class="whatsapp-float" data-whatsapp data-whatsapp-message="Hi Dutta Travels, I'd like to enquire about bus rental." aria-label="Chat on WhatsApp">💬</a>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
